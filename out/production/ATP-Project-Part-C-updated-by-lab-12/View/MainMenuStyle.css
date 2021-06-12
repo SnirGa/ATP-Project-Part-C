@@ -1,0 +1,17 @@
+.button{
+    -fx-background-image: url("/images/buttonAfterHover.png") no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+    -fx-pref-height: 60px;
+    -fx-pref-width: 160px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+
+}
+
+.button:hover{
+    -fx-background-image: url("/images/buttonBeforeHover.png") no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+}

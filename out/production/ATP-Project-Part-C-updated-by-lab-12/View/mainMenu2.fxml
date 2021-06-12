@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="520.0" prefWidth="662.0" stylesheets="@MainMenuStyle.css" style="-fx-background-image: url(/Images/powerpuffGirlsCoverPhoto.png);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MainMenu2Controller">
+   <children>
+      <GridPane layoutX="14.0" layoutY="111.0" prefHeight="400.0" prefWidth="200.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="126.66665649414062" minHeight="10.0" prefHeight="81.99999618530273" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="193.0000228881836" minHeight="10.0" prefHeight="63.00000762939453" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="279.00002797444665" minHeight="10.0" prefHeight="66.33335367838541" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="208.3333282470703" minHeight="10.0" prefHeight="72.99998474121094" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="164.33331298828125" minHeight="10.0" prefHeight="61.33332316080731" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="166.3333282470703" minHeight="10.0" prefHeight="61.333343505859375" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" prefHeight="137.0" prefWidth="279.0" text="New Game" onAction="#sendToMaze"/>
+            <Button mnemonicParsing="false" prefHeight="175.0" prefWidth="297.0" text="Load Game" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="177.0" prefWidth="320.0" text="Options" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="157.0" prefWidth="323.0" text="Help" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#SendToAbout" prefHeight="132.0" prefWidth="267.0" text="About" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" prefHeight="103.0" prefWidth="219.0" text="Exit" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <MenuBar layoutY="1.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="New" />
+                  <MenuItem mnemonicParsing="false" text="Load" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Options">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Properties" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help" />
+            <Menu mnemonicParsing="false" text="About" />
+            <Menu mnemonicParsing="false" text="Exit" />
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
