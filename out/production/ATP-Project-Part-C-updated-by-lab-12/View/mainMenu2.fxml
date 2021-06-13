@@ -27,7 +27,7 @@
             <Button mnemonicParsing="false" prefHeight="137.0" prefWidth="279.0" text="New Game" onAction="#sendToMaze"/>
             <Button mnemonicParsing="false" prefHeight="175.0" prefWidth="297.0" text="Load Game" GridPane.rowIndex="1" />
             <Button mnemonicParsing="false" prefHeight="177.0" prefWidth="320.0" text="Options" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" prefHeight="157.0" prefWidth="323.0" text="Help" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="157.0" prefWidth="323.0" text="Help" GridPane.rowIndex="3" onAction="#goToHelp" />
             <Button mnemonicParsing="false" onAction="#SendToAbout" prefHeight="132.0" prefWidth="267.0" text="About" GridPane.rowIndex="4" />
             <Button mnemonicParsing="false" prefHeight="103.0" prefWidth="219.0" text="Exit" GridPane.rowIndex="5" />
          </children>

@@ -16,4 +16,8 @@ public class MainMenu2Controller {
     public void sendToMaze(ActionEvent actionEvent) throws IOException {
         Main.toTheMaze();
     }
+
+    public void goToHelp(ActionEvent actionEvent) throws IOException {
+        Main.toHelp();
+    }
 }
